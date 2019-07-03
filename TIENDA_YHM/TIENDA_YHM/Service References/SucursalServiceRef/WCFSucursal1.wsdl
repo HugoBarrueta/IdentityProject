@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WCFSucursal" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/SucursalService/WCFSucursal.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/SucursalService/WCFSucursal.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/SucursalService/WCFSucursal.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SucursalWCF" />
+      <xsd:import schemaLocation="http://localhost/SucursalService/WCFSucursal.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWCFSucursal_GetUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_GetUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_GetProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProducto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_GetProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_GetCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_GetCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_InsertarProdcuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarProdcuto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_InsertarProdcuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarProdcutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_EditarProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarProducto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_EditarProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_ElimiarProdcuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ElimiarProdcuto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_ElimiarProdcuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ElimiarProdcutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_InsertarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_InsertarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_EditarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_EditarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_ElimiarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ElimiarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_ElimiarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ElimiarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_RegistrarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_RegistrarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_GetSucursal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSucursal" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_GetSucursal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_MostrarProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarProducto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_MostrarProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_MostrarBitacora_InputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarBitacora" />
+  </wsdl:message>
+  <wsdl:message name="IWCFSucursal_MostrarBitacora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarBitacoraResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWCFSucursal">
+    <wsdl:operation name="GetUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/GetUsuario" message="tns:IWCFSucursal_GetUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/GetUsuarioResponse" message="tns:IWCFSucursal_GetUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/GetProducto" message="tns:IWCFSucursal_GetProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/GetProductoResponse" message="tns:IWCFSucursal_GetProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/GetCategoria" message="tns:IWCFSucursal_GetCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/GetCategoriaResponse" message="tns:IWCFSucursal_GetCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarProdcuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/InsertarProdcuto" message="tns:IWCFSucursal_InsertarProdcuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/InsertarProdcutoResponse" message="tns:IWCFSucursal_InsertarProdcuto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/EditarProducto" message="tns:IWCFSucursal_EditarProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/EditarProductoResponse" message="tns:IWCFSucursal_EditarProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ElimiarProdcuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/ElimiarProdcuto" message="tns:IWCFSucursal_ElimiarProdcuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/ElimiarProdcutoResponse" message="tns:IWCFSucursal_ElimiarProdcuto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/InsertarCategoria" message="tns:IWCFSucursal_InsertarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/InsertarCategoriaResponse" message="tns:IWCFSucursal_InsertarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/EditarCategoria" message="tns:IWCFSucursal_EditarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/EditarCategoriaResponse" message="tns:IWCFSucursal_EditarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ElimiarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/ElimiarCategoria" message="tns:IWCFSucursal_ElimiarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/ElimiarCategoriaResponse" message="tns:IWCFSucursal_ElimiarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/RegistrarUsuario" message="tns:IWCFSucursal_RegistrarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/RegistrarUsuarioResponse" message="tns:IWCFSucursal_RegistrarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSucursal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/GetSucursal" message="tns:IWCFSucursal_GetSucursal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/GetSucursalResponse" message="tns:IWCFSucursal_GetSucursal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MostrarProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/MostrarProducto" message="tns:IWCFSucursal_MostrarProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/MostrarProductoResponse" message="tns:IWCFSucursal_MostrarProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MostrarBitacora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFSucursal/MostrarBitacora" message="tns:IWCFSucursal_MostrarBitacora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFSucursal/MostrarBitacoraResponse" message="tns:IWCFSucursal_MostrarBitacora_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWCFSucursal" type="tns:IWCFSucursal">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUsuario">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/GetUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProducto">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/GetProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoria">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/GetCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarProdcuto">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/InsertarProdcuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarProducto">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/EditarProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ElimiarProdcuto">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/ElimiarProdcuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/InsertarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/EditarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ElimiarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/ElimiarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/RegistrarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSucursal">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/GetSucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarProducto">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/MostrarProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarBitacora">
+      <soap:operation soapAction="http://tempuri.org/IWCFSucursal/MostrarBitacora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WCFSucursal">
+    <wsdl:port name="BasicHttpBinding_IWCFSucursal" binding="tns:BasicHttpBinding_IWCFSucursal">
+      <soap:address location="http://localhost/SucursalService/WCFSucursal.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

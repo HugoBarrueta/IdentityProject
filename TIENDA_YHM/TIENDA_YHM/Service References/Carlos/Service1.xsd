@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOftblProducto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tblProducto" nillable="true" type="tns:tblProducto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftblProducto" nillable="true" type="tns:ArrayOftblProducto" />
+  <xs:complexType name="tblProducto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bitEstatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="idCategoria" type="xs:int" />
+      <xs:element minOccurs="0" name="idSucursal" type="xs:int" />
+      <xs:element minOccurs="0" name="intCantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="strCategoria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strProducto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tblProducto" nillable="true" type="tns:tblProducto" />
+  <xs:complexType name="ArrayOftblUsuarios">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tblUsuarios" nillable="true" type="tns:tblUsuarios" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftblUsuarios" nillable="true" type="tns:ArrayOftblUsuarios" />
+  <xs:complexType name="tblUsuarios">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bitAdministrador" type="xs:boolean" />
+      <xs:element minOccurs="0" name="bitEstatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dteFechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="idSucursal" type="xs:int" />
+      <xs:element minOccurs="0" name="strPass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUsuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tblUsuarios" nillable="true" type="tns:tblUsuarios" />
+  <xs:complexType name="ArrayOfcatCategoria">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="catCategoria" nillable="true" type="tns:catCategoria" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcatCategoria" nillable="true" type="tns:ArrayOfcatCategoria" />
+  <xs:complexType name="catCategoria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bitEstatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="idSucursal" type="xs:int" />
+      <xs:element minOccurs="0" name="strCategoria" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="catCategoria" nillable="true" type="tns:catCategoria" />
+  <xs:complexType name="ArrayOfcatAccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="catAccion" nillable="true" type="tns:catAccion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcatAccion" nillable="true" type="tns:ArrayOfcatAccion" />
+  <xs:complexType name="catAccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="strNombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="catAccion" nillable="true" type="tns:catAccion" />
+  <xs:complexType name="ArrayOftblbitacora">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tblbitacora" nillable="true" type="tns:tblbitacora" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftblbitacora" nillable="true" type="tns:ArrayOftblbitacora" />
+  <xs:complexType name="tblbitacora">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dteFecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="idAccion" type="xs:int" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="strAccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strCategoriaNuevo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strCategoriaViejo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strProductoNuevo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strProductoViejo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUser" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tblbitacora" nillable="true" type="tns:tblbitacora" />
+  <xs:complexType name="ArrayOftblBitacorasUsuarios">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tblBitacorasUsuarios" nillable="true" type="tns:tblBitacorasUsuarios" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftblBitacorasUsuarios" nillable="true" type="tns:ArrayOftblBitacorasUsuarios" />
+  <xs:complexType name="tblBitacorasUsuarios">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bitCambioPass" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dteFecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="idAccion" type="xs:int" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="strAccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUsuarioNuevo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUsuarioViejo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tblBitacorasUsuarios" nillable="true" type="tns:tblBitacorasUsuarios" />
+  <xs:complexType name="ArrayOftblBitacorasCatalogos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tblBitacorasCatalogos" nillable="true" type="tns:tblBitacorasCatalogos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftblBitacorasCatalogos" nillable="true" type="tns:ArrayOftblBitacorasCatalogos" />
+  <xs:complexType name="tblBitacorasCatalogos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dteFecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="idAccion" type="xs:int" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="strAccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strCatalogoNuevo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strCatalogoViejo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUsuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tblBitacorasCatalogos" nillable="true" type="tns:tblBitacorasCatalogos" />
+  <xs:complexType name="ArrayOftblSucursal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tblSucursal" nillable="true" type="tns:tblSucursal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftblSucursal" nillable="true" type="tns:ArrayOftblSucursal" />
+  <xs:complexType name="tblSucursal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="strNombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tblSucursal" nillable="true" type="tns:tblSucursal" />
+</xs:schema>

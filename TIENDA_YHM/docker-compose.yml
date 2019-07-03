@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  servicios_yhm:
+    image: ${DOCKER_REGISTRY}serviciosyhm
+    build:
+      context: .\SERVICIOS_YHM
+      dockerfile: Dockerfile

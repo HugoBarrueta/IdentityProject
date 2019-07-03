@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="99489f42-9194-4359-af2a-aec73c8b8d61" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/SucursalService/WCFSucursal.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFSucursal4.xsd" MetadataType="Schema" ID="b4bd15fe-ceab-4931-a01d-fac16dee2c0a" SourceId="1" SourceUrl="http://localhost/SucursalService/WCFSucursal.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFSucursal41.xsd" MetadataType="Schema" ID="f1acef3f-feed-46b5-a028-272bec3f3409" SourceId="1" SourceUrl="http://localhost/SucursalService/WCFSucursal.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFSucursal42.xsd" MetadataType="Schema" ID="45a1d2f8-92ba-4166-8cfa-4cce57220d21" SourceId="1" SourceUrl="http://localhost/SucursalService/WCFSucursal.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFSucursal1.wsdl" MetadataType="Wsdl" ID="54c53df1-b825-497f-9bb7-699ae36a57cb" SourceId="1" SourceUrl="http://localhost/SucursalService/WCFSucursal.svc?wsdl" />
+    <MetadataFile FileName="WCFSucursal43.xsd" MetadataType="Schema" ID="8d7d14b6-2f9c-418f-bd04-8e0157c22698" SourceId="1" SourceUrl="http://localhost/SucursalService/WCFSucursal.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

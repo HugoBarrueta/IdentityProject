@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.4/ServiciosWCFTiendaCJI/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.4/ServiciosWCFTiendaCJI/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.4/ServiciosWCFTiendaCJI/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_consultarProductos_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosNombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosNombre" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosNombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarCategoriaCombo_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarCategoriaCombo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarCategoriaCombo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarCategoriaComboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarAccionCombo_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarAccionCombo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarAccionCombo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarAccionComboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarBitacora_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarBitacora" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarBitacora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarBitacoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarBitacoraUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarBitacoraUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarBitacoraUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarBitacoraUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarBitacoraCatalogo_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarBitacoraCatalogo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarBitacoraCatalogo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarBitacoraCatalogoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarSucural_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarSucural" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarSucural_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarSucuralResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarSucuralFinal_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarSucuralFinal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarSucuralFinal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarSucuralFinalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarUsuarioUnico_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarUsuarioUnico" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarUsuarioUnico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarUsuarioUnicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarProductos_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarProductos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarProductos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarProductosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarBitacora_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarBitacora" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarBitacora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarBitacoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarBitacoraUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarBitacoraUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarBitacoraUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarBitacoraUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarBitacoraCatalogo_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarBitacoraCatalogo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarBitacoraCatalogo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarBitacoraCatalogoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_eliminarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IService1_eliminarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_eliminarUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_eliminarUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_eliminarProductos_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarProductos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_eliminarProductos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarProductosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:editarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editarUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:editarUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editarUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editarUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editarProductos_InputMessage">
+    <wsdl:part name="parameters" element="tns:editarProductos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editarProductos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editarProductosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosEstatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosEstatus" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosEstatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosEstatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosNombreEstatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosNombreEstatus" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosNombreEstatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosNombreEstatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosCategoriaEstatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosCategoriaEstatus" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductosCategoriaEstatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductosCategoriaEstatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductoEstatusInner_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductoEstatusInner" />
+  </wsdl:message>
+  <wsdl:message name="IService1_consultarProductoEstatusInner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarProductoEstatusInnerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="consultarProductos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarProductos" message="tns:IService1_consultarProductos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarProductosResponse" message="tns:IService1_consultarProductos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosNombre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarProductosNombre" message="tns:IService1_consultarProductosNombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarProductosNombreResponse" message="tns:IService1_consultarProductosNombre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarProductosCategoria" message="tns:IService1_consultarProductosCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarProductosCategoriaResponse" message="tns:IService1_consultarProductosCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarUsuario" message="tns:IService1_consultarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarUsuarioResponse" message="tns:IService1_consultarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarCategoria" message="tns:IService1_consultarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarCategoriaResponse" message="tns:IService1_consultarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarCategoriaCombo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarCategoriaCombo" message="tns:IService1_consultarCategoriaCombo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarCategoriaComboResponse" message="tns:IService1_consultarCategoriaCombo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarAccionCombo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarAccionCombo" message="tns:IService1_consultarAccionCombo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarAccionComboResponse" message="tns:IService1_consultarAccionCombo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarBitacora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarBitacora" message="tns:IService1_consultarBitacora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarBitacoraResponse" message="tns:IService1_consultarBitacora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarBitacoraUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarBitacoraUsuario" message="tns:IService1_consultarBitacoraUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarBitacoraUsuarioResponse" message="tns:IService1_consultarBitacoraUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarBitacoraCatalogo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarBitacoraCatalogo" message="tns:IService1_consultarBitacoraCatalogo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarBitacoraCatalogoResponse" message="tns:IService1_consultarBitacoraCatalogo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarSucural">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarSucural" message="tns:IService1_consultarSucural_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarSucuralResponse" message="tns:IService1_consultarSucural_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarSucuralFinal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarSucuralFinal" message="tns:IService1_consultarSucuralFinal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarSucuralFinalResponse" message="tns:IService1_consultarSucuralFinal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarUsuarioUnico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarUsuarioUnico" message="tns:IService1_consultarUsuarioUnico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarUsuarioUnicoResponse" message="tns:IService1_consultarUsuarioUnico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertarCategoria" message="tns:IService1_insertarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertarCategoriaResponse" message="tns:IService1_insertarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertarUsuarios" message="tns:IService1_insertarUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertarUsuariosResponse" message="tns:IService1_insertarUsuarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarProductos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertarProductos" message="tns:IService1_insertarProductos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertarProductosResponse" message="tns:IService1_insertarProductos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarBitacora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertarBitacora" message="tns:IService1_insertarBitacora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertarBitacoraResponse" message="tns:IService1_insertarBitacora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarBitacoraUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertarBitacoraUsuarios" message="tns:IService1_insertarBitacoraUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertarBitacoraUsuariosResponse" message="tns:IService1_insertarBitacoraUsuarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarBitacoraCatalogo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertarBitacoraCatalogo" message="tns:IService1_insertarBitacoraCatalogo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertarBitacoraCatalogoResponse" message="tns:IService1_insertarBitacoraCatalogo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/eliminarCategoria" message="tns:IService1_eliminarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/eliminarCategoriaResponse" message="tns:IService1_eliminarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/eliminarUsuarios" message="tns:IService1_eliminarUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/eliminarUsuariosResponse" message="tns:IService1_eliminarUsuarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarProductos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/eliminarProductos" message="tns:IService1_eliminarProductos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/eliminarProductosResponse" message="tns:IService1_eliminarProductos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editarCategoria" message="tns:IService1_editarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editarCategoriaResponse" message="tns:IService1_editarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editarUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editarUsuarios" message="tns:IService1_editarUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editarUsuariosResponse" message="tns:IService1_editarUsuarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editarProductos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editarProductos" message="tns:IService1_editarProductos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editarProductosResponse" message="tns:IService1_editarProductos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosEstatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarProductosEstatus" message="tns:IService1_consultarProductosEstatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarProductosEstatusResponse" message="tns:IService1_consultarProductosEstatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosNombreEstatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarProductosNombreEstatus" message="tns:IService1_consultarProductosNombreEstatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarProductosNombreEstatusResponse" message="tns:IService1_consultarProductosNombreEstatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosCategoriaEstatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarProductosCategoriaEstatus" message="tns:IService1_consultarProductosCategoriaEstatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarProductosCategoriaEstatusResponse" message="tns:IService1_consultarProductosCategoriaEstatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductoEstatusInner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/consultarProductoEstatusInner" message="tns:IService1_consultarProductoEstatusInner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/consultarProductoEstatusInnerResponse" message="tns:IService1_consultarProductoEstatusInner_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="consultarProductos">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarProductos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosNombre">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarProductosNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosCategoria">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarProductosCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCategoriaCombo">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarCategoriaCombo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarAccionCombo">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarAccionCombo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarBitacora">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarBitacora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarBitacoraUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarBitacoraUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarBitacoraCatalogo">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarBitacoraCatalogo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarSucural">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarSucural" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarSucuralFinal">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarSucuralFinal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarUsuarioUnico">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarUsuarioUnico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertarUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarProductos">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertarProductos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarBitacora">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertarBitacora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarBitacoraUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertarBitacoraUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarBitacoraCatalogo">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertarBitacoraCatalogo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IService1/eliminarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IService1/eliminarUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarProductos">
+      <soap:operation soapAction="http://tempuri.org/IService1/eliminarProductos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IService1/editarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editarUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IService1/editarUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editarProductos">
+      <soap:operation soapAction="http://tempuri.org/IService1/editarProductos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosEstatus">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarProductosEstatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosNombreEstatus">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarProductosNombreEstatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosCategoriaEstatus">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarProductosCategoriaEstatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductoEstatusInner">
+      <soap:operation soapAction="http://tempuri.org/IService1/consultarProductoEstatusInner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://192.168.0.4/ServiciosWCFTiendaCJI/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

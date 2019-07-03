@@ -1,0 +1,17 @@
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\bin\Debug\TIENDA_YHM.exe.config
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\bin\Debug\TIENDA_YHM.exe
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\bin\Debug\TIENDA_YHM.pdb
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.csprojResolveAssemblyReference.cache
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Properties.Resources.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.Categorias.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.Login.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.MenuCategorias.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.MenuProductos.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.MenuUsuarios.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.Principal.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.Productos.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.Usuarios.resources
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.csproj.GenerateResource.Cache
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.exe
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.pdb
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\TIENDA_YHM\TIENDA_YHM\obj\Debug\TIENDA_YHM.Vistas.Sucursales.resources

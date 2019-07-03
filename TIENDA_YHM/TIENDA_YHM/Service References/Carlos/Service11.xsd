@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.0.4/ServiciosWCFTiendaCJI/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" />
+  <xs:element name="consultarProductos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarProductosResult" nillable="true" type="q1:ArrayOftblProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarProductosNombreResult" nillable="true" type="q2:ArrayOftblProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosCategoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_categoria" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosCategoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarProductosCategoriaResult" nillable="true" type="q3:ArrayOftblProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarUsuario">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarUsuarioResult" nillable="true" type="q4:ArrayOftblUsuarios" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarCategoria">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarCategoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarCategoriaResult" nillable="true" type="q5:ArrayOfcatCategoria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarCategoriaCombo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarCategoriaComboResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarCategoriaComboResult" nillable="true" type="q6:ArrayOfcatCategoria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarAccionCombo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarAccionComboResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarAccionComboResult" nillable="true" type="q7:ArrayOfcatAccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarBitacora">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarBitacoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarBitacoraResult" nillable="true" type="q8:ArrayOftblbitacora" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarBitacoraUsuario">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarBitacoraUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarBitacoraUsuarioResult" nillable="true" type="q9:ArrayOftblBitacorasUsuarios" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarBitacoraCatalogo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarBitacoraCatalogoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarBitacoraCatalogoResult" nillable="true" type="q10:ArrayOftblBitacorasCatalogos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarSucural">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarSucuralResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarSucuralResult" nillable="true" type="q11:ArrayOftblSucursal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarSucuralFinal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarSucuralFinalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarSucuralFinalResult" nillable="true" type="q12:tblSucursal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarUsuarioUnico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_pass" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarUsuarioUnicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarUsuarioUnicoResult" nillable="true" type="q13:tblUsuarios" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarCategoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_strCategoria" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_bitEstatus" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_idSucursal" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarCategoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertarCategoriaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarUsuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_strUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_strPass" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_bitEstatus" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_idSucursal" type="xs:int" />
+        <xs:element minOccurs="0" name="_bitAdministrador" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarUsuariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertarUsuariosResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarProductos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_strProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_idSucursal" type="xs:int" />
+        <xs:element minOccurs="0" name="_intCantidad" type="xs:int" />
+        <xs:element minOccurs="0" name="_bitEstatus" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_idCategora" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarProductosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertarProductosResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarBitacora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_idUsuario" type="xs:int" />
+        <xs:element minOccurs="0" name="_strProductoViejo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_strCategoriaViejo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_strProductoNuevo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_strCategoriaNuevo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_idAccion" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarBitacoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertarBitacoraResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarBitacoraUsuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_idUsuario" type="xs:int" />
+        <xs:element minOccurs="0" name="_strUsuarioViejo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_strUsuarioNuevo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_bitCambioPass" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_idAccion" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarBitacoraUsuariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertarBitacoraUsuariosResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarBitacoraCatalogo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_idUsuario" type="xs:int" />
+        <xs:element minOccurs="0" name="_strCatalogoViejo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_strCatalogoNuevo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_idAccion" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarBitacoraCatalogoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertarBitacoraCatalogoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarCategoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarCategoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="eliminarCategoriaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarUsuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarUsuariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="eliminarUsuariosResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarProductos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarProductosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="eliminarProductosResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editarCategoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id" type="xs:int" />
+        <xs:element minOccurs="0" name="_strCategoria" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_bitEstatus" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_idSucursal" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editarCategoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editarCategoriaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editarUsuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id" type="xs:int" />
+        <xs:element minOccurs="0" name="_strUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_strPass" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_bitEstatus" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_idSucursal" type="xs:int" />
+        <xs:element minOccurs="0" name="_bitAdministrador" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editarUsuariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editarUsuariosResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editarProductos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id" type="xs:int" />
+        <xs:element minOccurs="0" name="_strProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_idSucursal" type="xs:int" />
+        <xs:element minOccurs="0" name="_intCantidad" type="xs:int" />
+        <xs:element minOccurs="0" name="_bitEstatus" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_idCategora" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editarProductosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editarProductosResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosEstatus">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosEstatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarProductosEstatusResult" nillable="true" type="q14:ArrayOftblProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosNombreEstatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosNombreEstatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarProductosNombreEstatusResult" nillable="true" type="q15:ArrayOftblProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosCategoriaEstatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_categoria" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductosCategoriaEstatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarProductosCategoriaEstatusResult" nillable="true" type="q16:ArrayOftblProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductoEstatusInner">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarProductoEstatusInnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WCF.ServiciosSurcursales.Server" minOccurs="0" name="consultarProductoEstatusInnerResult" nillable="true" type="q17:ArrayOftblProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

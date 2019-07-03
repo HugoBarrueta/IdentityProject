@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceSucursalLMO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceSucursalLMO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="tblUsuarios">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DBMensajes">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dteFechaRegistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="idSucursal" type="xs:int" />
+          <xs:element minOccurs="0" name="strPass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strUsuario" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="tblUsuarios" nillable="true" type="tns:tblUsuarios" />
+  <xs:complexType name="DBMensajes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MensajeCorrecto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DBMensajes" nillable="true" type="tns:DBMensajes" />
+  <xs:complexType name="tblProducto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DBMensajes">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bitEstatus" type="xs:int" />
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="idCategoria" type="xs:int" />
+          <xs:element minOccurs="0" name="idSucursal" type="xs:int" />
+          <xs:element minOccurs="0" name="intCantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="strProducto" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="tblProducto" nillable="true" type="tns:tblProducto" />
+</xs:schema>
