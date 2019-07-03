@@ -1,0 +1,9 @@
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\bin\SucursalWCF.dll.config
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\bin\SucursalWCF.dll
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\bin\SucursalWCF.pdb
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\bin\MySql.Data.dll
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\bin\Google.Protobuf.dll
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\bin\BouncyCastle.Crypto.dll
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\bin\MySql.Data.xml
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\obj\Release\SucursalWCF.dll
+C:\Users\hbarr\Documents\Visual Studio 2015\Projects\SucursalWCF\SucursalWCF\obj\Release\SucursalWCF.pdb
